@@ -4,7 +4,7 @@ import "./NavBar.css";
 const NavBar = () => {
   return (
     <header>
-        <h1>calzados y mas</h1>
+        <h1>Calzados</h1>
         <nav>
             <ul>
                 <li>Zapatillas</li>

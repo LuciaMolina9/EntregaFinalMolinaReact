@@ -8,8 +8,8 @@ const App = () => {
   return (
     <div>
       <NavBar/>
-      <ItemListContainer />
-      <TituloPrincipal/>
+      <ItemListContainer saludo = "Bienvenidos" tienda = "Tienda de Zapatos"/>
+      {/* <TituloPrincipal/> */}
       <img className= 'imagen' src="https://static8.depositphotos.com/1029233/916/i/450/depositphotos_9164834-stock-photo-shoes-shoes.jpg" alt="Imagen zapatos" />
     </div>
   )
