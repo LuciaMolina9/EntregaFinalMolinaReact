@@ -2,15 +2,22 @@ import React from 'react'
 import './App.css';
 import NavBar from './components/NavBar/NavBar';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
-import TituloPrincipal from './components/TituloPrincipal/TituloPrincipal';
+import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
+
 
 const App = () => {
   return (
     <div>
-      <NavBar/>
-      <ItemListContainer saludo = "Bienvenidos" tienda = "Tienda de Zapatos"/>
-      {/* <TituloPrincipal/> */}
-      <img className= 'imagen' src="https://static8.depositphotos.com/1029233/916/i/450/depositphotos_9164834-stock-photo-shoes-shoes.jpg" alt="Imagen zapatos" />
+      <BrowserRouter>
+        <NavBar />
+        <Routes>
+          <Route path = "/" element = { <ItemListContainer /> } />
+          <Route path = "/categoria/:idCategoria" element = { <ItemListContainer /> } />
+          <Route path = "/item/:idItem" element = { <ItemDetailContainer /> } />
+        </Routes>
+      </BrowserRouter>
     </div>
   )
 }
