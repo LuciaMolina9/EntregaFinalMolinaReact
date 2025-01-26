@@ -1,3 +1,28 @@
-img {
-    max-width: 250px;
+.cardProducto {
+    display: inline-block;
+    max-width: 15vw;
+    margin: 2rem;
+    padding: 1rem;
+    border: 2px solid black;
+
+    img {
+    width: 80%;
+    border: 6px solid grey;
+    }
+    h4 {
+        color: black;
+    }  
+      
+    p {
+        text-decoration: underline solid black;
+        
+    }
+    
+    .btn {
+        border: 5px;
+        border-radius: 10px;
+        padding: 0.5rem;
+        background-color: #ef4b0f;
+        color: whitesmoke;
+    }
 }
