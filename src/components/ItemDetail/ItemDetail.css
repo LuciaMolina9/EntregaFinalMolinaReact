@@ -1,0 +1,10 @@
+li {
+    text-align: center;
+    border: 1px solid black;
+    padding: 1rem;
+}
+
+img {
+    width: 50vw;
+    border: 2px solid black;
+}
