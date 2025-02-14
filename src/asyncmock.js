@@ -20,7 +20,8 @@ const productos = [
             40
         ],
         "foto": "/9000.jpeg",
-        "precio":"$70000"
+        "precio":70000,
+        "stock": 20
     },
     {
         "id": 2,
@@ -39,7 +40,8 @@ const productos = [
             40
         ],
         "foto": "/3000.jpeg",
-        "precio":"$80000"
+        "precio":80000,
+        "stock": 20
     },
     {
         "id": 3,
@@ -57,7 +59,8 @@ const productos = [
             38
         ],
         "foto": "/b200.jpeg",
-        "precio":"$80000"
+        "precio":80000,
+        "stock": 20
     },
     {
         "id": 4,
@@ -73,7 +76,8 @@ const productos = [
             40
         ],
         "foto": "/1000.webp",
-        "precio":"$50000"
+        "precio":50000,
+        "stock": 20
     },
     {
         "id": 5,
@@ -93,7 +97,8 @@ const productos = [
             40
         ],
         "foto": "/1030.webp",
-        "precio":"$50000"
+        "precio":50000,
+        "stock": 20
     },
     {
         "id": 6,
@@ -114,7 +119,8 @@ const productos = [
             40
         ],
         "foto": "/1050.webp",
-        "precio":"$60000"
+        "precio":60000,
+        "stock": 20
     },
     {
         "id": 7,
@@ -131,7 +137,8 @@ const productos = [
             40
         ],
         "foto": "/9050.webp",
-        "precio":"$75000"
+        "precio":75000,
+        "stock": 20
     },
     {
         "id": 8,
@@ -152,7 +159,8 @@ const productos = [
             40
         ],
         "foto": "/9060.webp",
-        "precio":"$85000"
+        "precio":85000,
+        "stock": 20
     },
     {
         "id": 9,
@@ -167,7 +175,8 @@ const productos = [
             36
         ],
         "foto": "/b300.webp",
-        "precio":"$95000"
+        "precio":95000,
+        "stock": 20
     },
     {
         "id": 10,
@@ -186,7 +195,8 @@ const productos = [
             40
         ],
         "foto": "/2900.jpeg",
-        "precio":"$90000"
+        "precio":90000,
+        "stock": 20
     }
 ]
 
@@ -196,7 +206,7 @@ export const getProductos = () => {
     return new Promise (resolve => {
         setTimeout(()=> {
             resolve(productos);
-        }, 2000);
+        }, 20); //minimice los timepos de carga por facilidad
     })
 }
 
@@ -207,9 +217,7 @@ export const getUnProducto = (nombre) => {
         setTimeout (()=> { 
             const productoBuscado = productos.find(id => id.nombre === nombre);
             resolve (productoBuscado);
-        }, 2000)
-
-
+        }, 20)
     })
 }
 
@@ -220,6 +228,9 @@ export const getCategoria = (categoria) => {
         setTimeout (()=> {
             const categoriaBuscada = productos.filter (id => id.tipo === categoria);
             resolve (categoriaBuscada);
-        }, 2000)
+        }, 20)
     })
 }
+
+
+//lista colores
