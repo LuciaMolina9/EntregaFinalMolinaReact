@@ -68,8 +68,8 @@ export const CartProvider = ({children}) => {
 
 }
 
-// const ContextCart = () => {
+const contextCart = () => {
   
-// }
+}
 
-// export default ContextCart
+export default ContextCart

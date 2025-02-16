@@ -1,7 +1,7 @@
 import React from 'react'
 import "./ItemDetail.css"
 import ItemCount from '../ItemCount/ItemCount'
-import { useState, useEffect, useContext } from 'react'
+import { useState, useContext, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { ContextCart } from '../../context/ContextCart'
 
@@ -9,18 +9,15 @@ import { ContextCart } from '../../context/ContextCart'
 const ItemDetail = ({ nombre, tipo, colores, talles, foto, precio, stock }) => {
   
   const [agregarPares, setAgregarPares] = useState(0);
-
   const {agregarCarrito} = useContext(ContextCart)
 
   const manejadorCantidad = (pares) => {
     setAgregarPares(pares);
-    // console.log("pares agregados: " + pares)
-
-    const item = { nombre, precio, colores, talles };
-    agregarCarrito(item, pares)
-
+    const item = { nombre, precio, colores, talles, foto };
+    agregarCarrito(item, pares);
   }
- 
+  
+
   return (
     <div>
       <h2> Articulo: {nombre} </h2>
