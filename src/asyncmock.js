@@ -1,5 +1,5 @@
 //base de datos utilizada en el curso de JS
-
+/*
 const productos = [
     {
         "id": 1,
@@ -234,3 +234,4 @@ export const getCategoria = (categoria) => {
 
 
 //lista colores
+*/
