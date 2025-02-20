@@ -53,7 +53,7 @@ const Checkout = () => {
                 vaciarCarrito();
 
             })    
-            .catch (error =>{
+            .catch (error => {
                 setError ("Hubo un error procesando la compra")
             })
 

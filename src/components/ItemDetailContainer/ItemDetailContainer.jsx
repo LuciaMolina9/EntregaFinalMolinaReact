@@ -1,5 +1,4 @@
 import React from 'react'
-// import { getUnProducto } from '../../asyncmock';
 import { useState, useEffect } from 'react';
 import ItemDetail from '../ItemDetail/ItemDetail';
 import { useParams } from 'react-router-dom';
