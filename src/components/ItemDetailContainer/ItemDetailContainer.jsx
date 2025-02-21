@@ -8,7 +8,6 @@ import { db } from '../../services/config';
 const ItemDetailContainer = () => {
     const [producto, setProducto] = useState (null);
     const {idItem} = useParams ();
-    console.log(idItem);
 
     useEffect ( () => {
         const newDoc = doc(db, "productos", idItem);

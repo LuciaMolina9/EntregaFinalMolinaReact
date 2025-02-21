@@ -1,6 +1,10 @@
-.imgcarrito {
-    width: 8vw;
-    display: flex;
-    flex-direction: column;
-}
+.icono {
+    margin: 1rem;
 
+    .imgcarrito {
+        width: 6vw;
+        display: flex;
+        flex-direction: column;
+    }
+
+}

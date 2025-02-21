@@ -1,4 +1,4 @@
-import { useState, useEffect, useContext } from 'react'
+import { useState, useContext } from 'react'
 import { db } from '../../services/config'
 import { ContextCart } from '../../context/ContextCart'
 import { collection, addDoc } from 'firebase/firestore'
@@ -34,7 +34,7 @@ const Checkout = () => {
                 items: carrito.map(producto=> ({
                     articulo: producto.item.nombre,
                     cantidad: producto.cantidad,
-                    //si solucionamos talle/color, VA ACA
+                    
                 })),
                 cantidadTotal: cantidadTotal,
                 total: total,
@@ -44,8 +44,7 @@ const Checkout = () => {
                 telefono,
                 email
             }
-        
-        console.log(order);
+
         addDoc (collection(db, "orders"), order)
             .then (docRef=> {
                 setOrderId(docRef.id);
