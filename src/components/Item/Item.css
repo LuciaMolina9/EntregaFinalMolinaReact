@@ -14,15 +14,15 @@
     }  
       
     p {
-        text-decoration: underline solid black;
-        
+        text-decoration: underline solid black;  
     }
     
     .btn {
+        text-decoration: none;
         border: 5px;
         border-radius: 10px;
         padding: 0.5rem;
-        background-color: #ef4b0f;
+        background-color: #456aaf;
         color: whitesmoke;
     }
 }

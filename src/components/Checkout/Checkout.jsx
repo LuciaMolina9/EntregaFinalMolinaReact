@@ -3,7 +3,6 @@ import { db } from '../../services/config'
 import { ContextCart } from '../../context/ContextCart'
 import { collection, addDoc } from 'firebase/firestore'
 import { Link } from 'react-router-dom'
-
 import './Checkout.css'
 
 const Checkout = () => {
@@ -61,29 +60,29 @@ const Checkout = () => {
 
 
   return (
-    <div>
+    <div className='formulario'>
         <form onSubmit={manejadorForm}>
-        <div>
+        <div className='datos'>
         <label htmlFor="">Nombre: </label>
         <input type="text" onChange={(e)=>  setNombre(e.target.value)}/>
         </div>
 
-        <div>
+        <div className='datos'>
         <label htmlFor="">Apellido: </label>
         <input type="text" onChange={(e)=>  setApellido(e.target.value)}/>
         </div>
 
-        <div>
+        <div className='datos'>
         <label htmlFor="">Teléfono</label>
         <input type="text" onChange={(e)=>  setTelefono(e.target.value)}/>
         </div>
 
-        <div>
+        <div className='datos'>
         <label htmlFor="">Email: </label>
         <input type="email" onChange={(e)=>  setEmail(e.target.value)}/>
         </div>
 
-        <div>
+        <div className='datos'>
         <label htmlFor="">Repetir Email: </label>
         <input type="email" onChange={(e)=>  setRepetirEmail(e.target.value)}/>
         </div>
@@ -92,10 +91,15 @@ const Checkout = () => {
             error && <h4>{error}</h4>
         }
 
-        <button type="submit">Finalizar orden</button>
+        <button className='btnsFinal' type="submit">Finalizar orden</button>
 
         {
-            orderId && (<h3>¡Gracias por tu compra! Tu número de orden es {orderId}</h3>)
+            orderId && (
+                <div>
+                <h3>¡Gracias por tu compra! Tu número de orden es {orderId}</h3>
+                <button className='btnsFinal'><Link to="/">Volver al inicio</Link></button>
+                </div>
+                )
         }
 
         </form>

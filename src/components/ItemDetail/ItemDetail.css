@@ -4,7 +4,29 @@ li {
     padding: 1rem;
 }
 
+button {
+    border: none;
+    margin: none;
+    background-color: transparent
+}
+
 img {
     width: 50vw;
     border: 2px solid black;
+}
+
+.btnsDetail {
+    text-decoration: none;
+    border: 5px;
+    border-radius: 10px;
+    padding: 0.5rem;
+    color: whitesmoke;
+    
+}
+
+.home {
+    background-color: #456aaf;
+}
+.carro{
+    background-color: #ef4b0f;
 }

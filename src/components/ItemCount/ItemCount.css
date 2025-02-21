@@ -1,0 +1,20 @@
+.contadores {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.elmCont{
+    margin: 1rem;
+    border: 1px solid black;
+}
+.btnAgregar {
+    display: inline-flex;
+    text-decoration: none;
+    border: 5px;
+    border-radius: 10px;
+    padding: 0.5rem;
+    background-color: #ef4b0f;
+    color: whitesmoke;
+}

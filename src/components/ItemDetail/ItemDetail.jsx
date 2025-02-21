@@ -27,7 +27,11 @@ const ItemDetail = ({ nombre, tipo, colores, talles, foto, precio, stock }) => {
       <h3> Colores: {colores}  </h3>
       <h3> Precio: ${precio} </h3>
       {
-        agregarPares > 0 ? (<Link to="/Cart"> Finalizar compra </Link>) :
+        agregarPares > 0 ? ( <div>
+        <button><Link to="/" className="btnsDetail home"> Continuar comprando </Link></button>  
+        <button><Link to="/Cart" className="btnsDetail carro"> Finalizar compra </Link></button>
+        </div>
+      ) :
           (<ItemCount inicial={1} stock={stock} funcionAgregar={manejadorCantidad} />)
       }
     </div>

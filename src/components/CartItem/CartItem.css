@@ -1,0 +1,28 @@
+.objetoCart {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    margin: 1rem;
+}
+
+.fotoCart {
+    width: 15vw;
+    display: inline-flex;
+    margin: 1rem;
+}
+
+.infoCart {
+    width: 85vw;
+    display: inline-flex;
+    justify-content: space-between;
+    margin: 1rem;
+}
+
+.btnEliminar {
+    text-decoration: none;
+    border: 5px;
+    border-radius: 10px;
+    padding: 0.5rem;
+    background-color: #ef4b0f;
+    color: whitesmoke;
+}

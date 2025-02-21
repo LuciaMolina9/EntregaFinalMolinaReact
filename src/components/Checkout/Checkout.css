@@ -1,0 +1,18 @@
+/* .formulario {
+    
+} */
+
+.datos {
+    text-align: center;
+    justify-content: center;
+    margin: 1rem;
+}
+
+.btnsFinal{
+    text-decoration: none;
+    border: 5px;
+    border-radius: 10px;
+    padding: 0.5rem;
+    background-color: #ef4b0f;
+    color: whitesmoke;
+}

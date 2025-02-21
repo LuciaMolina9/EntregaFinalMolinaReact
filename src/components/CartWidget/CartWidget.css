@@ -1,8 +1,6 @@
 .imgcarrito {
-    width: 90px;
+    width: 8vw;
+    display: flex;
+    flex-direction: column;
 }
 
-.icono {
-    background-color: brown;
-    border: 5px solid blue;
-}
