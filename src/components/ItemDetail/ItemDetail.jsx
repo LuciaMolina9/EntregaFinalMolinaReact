@@ -20,7 +20,7 @@ const ItemDetail = ({ nombre, tipo, colores, talles, foto, precio, stock }) => {
 
   return (
     <div>
-      <h2> Articulo: {nombre} </h2>
+      <h2> Artículo: {nombre} </h2>
       <img src={foto} alt={nombre} />
       <h3> Tipo:  {tipo} </h3>
       {/* <h3> Talles: {talles} </h3>
